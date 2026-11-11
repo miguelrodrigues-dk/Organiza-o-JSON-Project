@@ -1,0 +1,55 @@
+<%- include("../partials/header") %>
+<%- include("../partials/nav") %>
+
+<div style="background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 2.5rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); max-width: 600px; margin: 0 auto;">
+    
+    <!-- Cabeçalho do Formulário -->
+    <div style="margin-bottom: 2rem; border-bottom: 1px solid #f1f5f9; padding-bottom: 1rem;">
+        <a href="/categorias" style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.85rem; color: #4f46e5; text-decoration: none; font-weight: 600; margin-bottom: 0.75rem;">
+            ⬅️ Voltar para listagem
+        </a>
+        <h2 style="font-size: 1.5rem; font-weight: 700; color: #0f172a; margin: 0;">Nova Categoria</h2>
+        <p style="font-size: 0.875rem; color: #64748b; margin-top: 4px;">Insira as informações abaixo para cadastrar a nova categoria.</p>
+    </div>
+
+    <!-- Formulário Real do seu Grupo -->
+    <form action="/categorias" method="POST" style="display: flex; flex-direction: column; gap: 1.5rem;">
+        
+        <!-- Campo: Nome -->
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <label for="nome" style="font-size: 0.75rem; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.05em;">Nome</label>
+            <input 
+                type="text" 
+                id="nome" 
+                name="nome" 
+                placeholder="Digite o nome" 
+                required
+                style="width: 100%; padding: 12px 16px; border: 1px solid #cbd5e1; border-radius: 10px; font-family: inherit; font-size: 0.95rem; color: #0f172a; outline: none; transition: border-color 0.2s;"
+            />
+        </div>
+
+        <!-- Campo: Descrição -->
+        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <label for="descricao" style="font-size: 0.75rem; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.05em;">Descrição</label>
+            <textarea 
+                id="descricao" 
+                name="descricao" 
+                rows="4" 
+                placeholder="Digite a descrição"
+                style="width: 100%; padding: 12px 16px; border: 1px solid #cbd5e1; border-radius: 10px; font-family: inherit; font-size: 0.95rem; color: #0f172a; outline: none; transition: border-color 0.2s; resize: vertical;"
+            ></textarea>
+        </div>
+
+        <!-- Botões de Ação do Formulário -->
+        <div style="display: flex; justify-content: flex-end; gap: 1rem; margin-top: 1rem; border-top: 1px solid #f1f5f9; padding-top: 1.5rem;">
+            <a href="/categorias" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.625rem 1.25rem; border-radius: 10px; font-size: 0.875rem; font-weight: 600; color: #475569; background-color: #f1f5f9; text-decoration: none;">
+                Cancelar
+            </a>
+            <button type="submit" style="display: inline-flex; align-items: center; justify-content: center; padding: 0.625rem 1.5rem; border-radius: 10px; font-size: 0.875rem; font-weight: 600; color: #ffffff; background-color: #10b981; border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);">
+                💾 Cadastrar
+            </button>
+        </div>
+    </form>
+</div>
+
+<%- include("../partials/footer") %>

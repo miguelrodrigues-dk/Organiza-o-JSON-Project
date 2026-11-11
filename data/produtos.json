@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nome": "Tênis",
+    "descricao": "Tênis esportivo",
+    "preco": 199.99,
+    "estoque": 10,
+    "categoria": "Calçados"
+  },
+  {
+    "id": 2,
+    "nome": "Notebook",
+    "descricao": "Notebook gamer",
+    "preco": 5999.99,
+    "estoque": 5,
+    "categoria": "Informática"
+  },
+  {
+    "id": 3,
+    "nome": "Camiseta",
+    "descricao": "Camiseta de algodão",
+    "preco": 49.99,
+    "estoque": 20,
+    "categoria": "Roupas"
+  }
+]

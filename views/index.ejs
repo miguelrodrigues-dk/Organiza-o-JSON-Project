@@ -1,0 +1,30 @@
+<%- include("partials/header") %>
+<%- include("partials/nav") %>
+
+<div class="card-custom">
+    <h1 class="welcome-title">Miguel Rodrigues, Nicolas e Matheus</h1>
+    <span style="display: inline-block; background-color: #e0e7ff; color: #4f46e5; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 700; margin-bottom: 1rem; text-align: center;">2º DS - Técnico em Desenvolvimento de Sistemas</span>
+    
+    <p class="welcome-text">
+        Exemplo desenvolvido com Express, EJS, Routes, Partials e CSS Customizado na aula de PW II.<br>
+        Utilize o menu superior ou os botões de atalho abaixo para gerenciar as entidades do sistema CRUD.
+    </p>
+
+    <!-- Grade de botões de atalho originais mantida -->
+    <div class="grid-links">
+        <a href="/categorias" class="card-link-item">
+            <i class="fa-solid fa-tags"></i>Categorias
+        </a>
+        <a href="/clientes" class="card-link-item">
+            <i class="fa-solid fa-users"></i>Clientes
+        </a>
+        <a href="/fornecedores" class="card-link-item">
+            <i class="fa-solid fa-truck-ramp-box"></i>Fornecedores
+        </a>
+        <a href="/produtos" class="card-link-item">
+            <i class="fa-solid fa-box"></i>Produtos
+        </a>
+    </div>
+</div>
+
+<%- include("partials/footer") %>

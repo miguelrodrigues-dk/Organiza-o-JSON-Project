@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "rasaoSocial": "Nike",
+    "cnpj": "43.761.092/0001-85",
+    "email": "Nike@gmail.com",
+    "telephone": "(11) 3214-5500",
+    "cidade": "São Paulo"
+  },
+  {
+    "id": 2,
+    "rasaoSocial": "Samsung",
+    "cnpj": "18.236.449/00001-0000",
+    "email": "Samsung@gmail.com",
+    "telephone": "(11) 4004-0000",
+    "cidade": "Campinas"
+  },
+  {
+    "id": 3,
+    "rasaoSocial": "Zara",
+    "cnpj": "29.873.115/0001-44",
+    "email": "Zara@gmail.com",
+    "telephone": "(21) 2503-9100",
+    "cidade": "Rio de Janeiro"
+  }
+]

@@ -1,0 +1,72 @@
+<style>
+    /* Mantém a sua estrutura e cores intactas, aplicando apenas a responsividade */
+    .navbar-nativo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap; /* Permite que o menu quebre linha em telas pequenas */
+        gap: 15px; /* Garante um espaçamento caso o menu quebre linha */
+        margin-bottom: 2rem; /* ADICIONADO: Afasta o conteúdo de baixo para não grudar no menu */
+    }
+
+    .navbar-menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap; /* Impede que os links fiquem esmagados no celular */
+        gap: 10px; /* Mantém o alinhamento e distância segura entre os links */
+    }
+
+    .navbar-brand, .navbar-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        white-space: nowrap; /* Evita que o texto quebre no meio da palavra */
+    }
+
+    /* Ajuste de largura flexível para o container das páginas */
+    .main-container {
+        width: 100%;
+        max-width: 1200px; /* Define um limite máximo para telas de computador */
+        margin: 0 auto;
+        padding: 0 15px; /* Cria uma margem de segurança nas laterais no celular */
+        box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+    }
+
+    /* Regra automática para telas menores (celulares) */
+    @media (max-width: 768px) {
+        .navbar-nativo {
+            flex-direction: column; /* Empilha o logo e o menu no centro */
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 1.5rem; /* Ajusta o afastamento sutilmente em telas menores */
+        }
+        
+        .navbar-menu {
+            justify-content: center; /* Centraliza a lista de links no dispositivo móvel */
+        }
+    }
+</style>
+
+<header class="navbar-nativo">
+    <!-- Logo do Sistema -->
+    <a class="navbar-brand" href="/">
+        <i class="fa-solid fa-cube"></i>
+        <span>Sistemas PW</span>
+    </a>
+
+    <!-- Menu de Navegação com CSS Nativo -->
+    <nav>
+        <ul class="navbar-menu">
+            <li><a class="navbar-link" href="/"><i class="fa-solid fa-house"></i> Início</a></li>
+            <li><a class="navbar-link" href="/categorias"><i class="fa-solid fa-tags"></i> Categorias</a></li>
+            <li><a class="navbar-link" href="/clientes"><i class="fa-solid fa-users"></i> Clientes</a></li>
+            <li><a class="navbar-link" href="/fornecedores"><i class="fa-solid fa-truck-ramp-box"></i> Fornecedores</a></li>
+            <li><a class="navbar-link" href="/produtos"><i class="fa-solid fa-box"></i> Produtos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Abre o container que centraliza e organiza o conteúdo das páginas do seu CRUD -->
+<main class="main-container">

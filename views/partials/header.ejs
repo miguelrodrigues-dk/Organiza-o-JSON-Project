@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de Organizações PW</title>
+    
+    <!-- Google Fonts - Fonte Inter -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <!-- FontAwesome para Ícones -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Estrutura da Navbar */
+        .navbar-nativo {
+            background-color: #0f172a;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+        .navbar-brand i {
+            background-color: #4f46e5;
+            padding: 8px;
+            border-radius: 6px;
+        }
+
+        .navbar-menu {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .navbar-link {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+
+        .navbar-link:hover {
+            color: #ffffff;
+            background-color: #1e293b;
+        }
+
+        /* Container Principal */
+        .main-container {
+            flex-grow: 1;
+            width: 100%;
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        /* Cards e Listagens */
+        .card-custom {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+        }
+
+        .welcome-title {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.025em;
+        }
+
+        .welcome-text {
+            color: #64748b;
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        /* Links de Atalho na Home */
+        .grid-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .card-link-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #4f46e5;
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.1);
+        }
+
+        .card-link-item:hover {
+            background-color: #4338ca;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(79, 70, 229, 0.2);
+        }
+
+        /* Rodapé */
+        .footer-nativo {
+            background-color: #0f172a;
+            color: #94a3b8;
+            padding: 1.5rem 2rem;
+            text-align: center;
+            margin-top: auto;
+            border-top: 1px solid #1e293b;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>

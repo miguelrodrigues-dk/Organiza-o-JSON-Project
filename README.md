@@ -179,7 +179,7 @@ dentro de cada rota do CRUD.
 
 # Links do Projeto:
 
-• Link da Aplicação (Deploy):
+• Link da Aplicação (Deploy): https://organiza-o-json-project.onrender.com
 
 • Link do Repositório GitHub: https://github.com/miguelrodrigues-dk/Organiza-o-JSON-Project.git
 
